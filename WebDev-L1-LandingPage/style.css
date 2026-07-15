@@ -1,0 +1,472 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+    color:#1F2937;
+    line-height:1.6;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header{
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    background:linear-gradient(45deg,#6C63FF,#3B82F6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#6C63FF;
+    border-bottom:2px solid #6C63FF;
+}
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#EEF4FF,#F8FBFF);
+}
+
+.hero-content{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+    animation:fadeIn 1s ease;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:30px;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn{
+    display:inline-block;
+    background:linear-gradient(45deg,#6C63FF,#3B82F6);
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(108,99,255,.35);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(108,99,255,.45);
+}
+
+/* ==========================
+   HERO IMAGE
+========================== */
+
+.hero-image{
+    flex:1;
+    text-align:center;
+    animation:fadeIn 1.2s ease;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:25px;
+    box-shadow:0 20px 45px rgba(108,99,255,.25);
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+/* ==========================
+   FEATURES SECTION
+========================== */
+
+.features{
+    padding:100px 10%;
+    background:#FFFFFF;
+    text-align:center;
+}
+
+.features h2{
+    font-size:42px;
+    color:#6C63FF;
+    margin-bottom:60px;
+}
+
+/* Feature Cards */
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:320px;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(108,99,255,.12);
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(108,99,255,.20);
+}
+
+.card i{
+    font-size:50px;
+    color:#6C63FF;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.card p{
+    font-size:16px;
+    color:#666;
+    line-height:1.7;
+}
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about{
+    padding:100px 10%;
+    background:linear-gradient(135deg,#EEF2FF,#F8FBFF);
+}
+
+.about-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+    text-align:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:25px;
+    box-shadow:0 20px 45px rgba(108,99,255,.20);
+    transition:0.4s ease;
+}
+
+.about-image img:hover{
+    transform:scale(1.03);
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:42px;
+    color:#6C63FF;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    font-size:17px;
+    color:#555;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.about-text .btn{
+    margin-top:10px;
+}
+/* ==========================
+   TESTIMONIALS SECTION
+========================== */
+
+.testimonials{
+    padding:100px 10%;
+    background:#FFFFFF;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-size:42px;
+    color:#6C63FF;
+    margin-bottom:60px;
+}
+
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.testimonial-card{
+    width:320px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(108,99,255,.12);
+    transition:0.4s ease;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(108,99,255,.22);
+}
+
+.testimonial-card h3{
+    color:#FFD700;
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.testimonial-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+.testimonial-card h4{
+    color:#6C63FF;
+    font-size:18px;
+}
+/* ==========================
+   CALL TO ACTION (CTA)
+========================== */
+
+.cta{
+    padding:100px 10%;
+    text-align:center;
+    background:linear-gradient(135deg,#6C63FF,#3B82F6);
+    color:white;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    font-size:18px;
+    margin-bottom:35px;
+    color:#f5f5f5;
+}
+
+.cta .btn{
+    background:white;
+    color:#6C63FF;
+    box-shadow:none;
+}
+
+.cta .btn:hover{
+    background:#f1f1f1;
+    transform:translateY(-4px);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#1F2937;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+footer h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#d1d5db;
+    margin-bottom:15px;
+}
+
+.footer-links{
+    margin:25px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#60A5FA;
+}
+
+.social-icons{
+    margin:25px 0;
+}
+
+.social-icons a{
+    color:white;
+    font-size:24px;
+    margin:0 12px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#60A5FA;
+    transform:translateY(-4px);
+}
+
+footer .copyright{
+    margin-top:25px;
+    font-size:15px;
+    color:#9ca3af;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-content,
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:38px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-image img,
+    .about-image img{
+        max-width:350px;
+    }
+
+    .features h2,
+    .about-text h2,
+    .testimonials h2,
+    .cta h2{
+        font-size:32px;
+    }
+
+    .card,
+    .testimonial-card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:8px;
+    }
+}
